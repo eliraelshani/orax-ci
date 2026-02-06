@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ora Chat Widget Test</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Testing Ora Chat Widget</h1>
+  <p>This is a simple page to test the chat integration.</p>
+  <!-- 
+  <h2>Form (iframe)</h2>
+  <iframe src="https://dev.agenticonvo.com/OraForm/setup.html"></iframe> -->
+  
+  <h2>Chat Widget</h2>
+  
+  <script src="https://dev.agenticonvo.com/ora/mdonboarding/ora-v1.0.0.js" defer></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      window.initiateOraChatbot({ 
+        entityId: "Rh0Q83vj9CduvuQNmIzyuA",
+        profile: "mdonboarding"
+      });
+    });
+  </script>  
+</body>
+</html>
